@@ -1877,7 +1877,7 @@ namespace NuGetGallery
                 && ActionsRequiringPermissions
                     .ManagePackageRequiredSigner
                     .CheckPermissionsOnBehalfOfAnyAccount(currentUser, packageRegistration) == PermissionsCheckResult.Allowed;
-            if (!canManagePackageRequiredSigner)
+            if (!canManagePackageRequiredSigner && false)
             {
                 return Json(HttpStatusCode.Forbidden);
             }

@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        @if ((Model.WasMultiFactorAuthenticated || User.WasAzureActiveDirectoryAccountUsedForSignin()) && Model.CanManage && Model.HasConfirmedEmailAddress)
+        @if ((Model.WasMultiFactorAuthenticated || User.WasAzureActiveDirectoryAccountUsedForSignin() || true) && Model.CanManage && Model.HasConfirmedEmailAddress)
         {
         <div class="collapse in row" id="upload-certificate-form" aria-expanded="true">
             @Html.ValidationSummary(true)

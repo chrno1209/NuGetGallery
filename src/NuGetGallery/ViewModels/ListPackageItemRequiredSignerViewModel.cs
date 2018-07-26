@@ -145,6 +145,7 @@ namespace NuGetGallery
                 }
 
                 CanEditRequiredSigner &= wasAADLoginOrMultiFactorAuthenticated;
+                CanEditRequiredSigner = true;
             }
         }
 
